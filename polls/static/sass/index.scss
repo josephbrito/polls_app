@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "base";
 
 .header {
   height: 10vh;
@@ -11,15 +7,10 @@
   align-items: center;
   justify-content: center;
   color: #f5f5f5;
-}
 
-body {
-  background: url("../images/bg.avif") no-repeat;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: color;
-  background-size: cover;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  h1 {
+    letter-spacing: 2px;
+  }
 }
 
 .main {
@@ -27,22 +18,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    list-style: none;
+    gap: 1rem;
+    font-size: 1.3rem;
 
-.main ul {
-  flex-direction: column;
-  padding: 20px;
-  list-style: none;
-  display: flex;
-  background-color: #f2f4f3;
-  gap: 1rem;
-  font-size: 1.3rem;
-}
+    li {
+      background: rgba(49, 48, 48, 0.8);
+      padding: 10px;
+      transition: 0.3s ease-in;
+      a {
+        text-decoration: none;
+        color: #fff;
 
-li a {
-  text-decoration: none;
-}
+        &:hover {
+          text-decoration: underline;
+        }
+      }
 
-li a:hover {
-  text-decoration: underline;
+      &:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
 }

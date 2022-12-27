@@ -1,0 +1,29 @@
+@use "base";
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
+
+  ul {
+    list-style: square;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    a {
+      color: black;
+      background: #fff;
+      padding: 5px;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

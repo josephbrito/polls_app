@@ -12,46 +12,30 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.header {
-  height: 10vh;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f5f5f5;
-}
-.header h1 {
-  letter-spacing: 2px;
-}
-
 .main {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
 }
 .main ul {
+  list-style: square;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  list-style: none;
-  gap: 1rem;
-  font-size: 1.3rem;
+  gap: 2rem;
 }
-.main ul li {
-  background: rgba(49, 48, 48, 0.8);
-  padding: 10px;
-  transition: 0.3s ease-in;
-}
-.main ul li a {
+.main ul a {
+  color: black;
+  background: #fff;
+  padding: 5px;
   text-decoration: none;
-  color: #fff;
+  text-align: center;
 }
-.main ul li a:hover {
+.main ul a:hover {
   text-decoration: underline;
 }
-.main ul li:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=results.css.map */
